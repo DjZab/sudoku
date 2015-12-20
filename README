@@ -1,0 +1,52 @@
+********************
+*** 	About	 ***
+********************
+
+The goal wasn't to create another sudoku-game, but to show how I code (documenting, structuring).
+
+I even didn't handled exceptions to keep the code simple.
+Therefore you will be able to find a bug, hitting the keyboard to hard.
+My 4-year old daughter found it beta-testing. Please, ignore it ;)
+
+Everything was written using a text-editor (Sublime Text 2, no IDE) and compiled in the commandline (javac, javadoc, javapackager).
+
+
+
+********************
+*** Things to do ***
+********************
+
+- Class SudokuController :	setDifficulty
+							menuChange(about)
+
+- CSS : Changing the hint colors
+
+- Gradle
+
+- JUnit
+
+
+********************
+***	 To compile  ***
+********************
+
+Compile and run just works with Oracle JRE 8 actually !
+
+
+Compile:
+
+Windows :
+javac -sourcepath src -d compiled src\sudoku\*.java src\sudoku\gui\javafx\*.java src\sudoku\values\*.java
+
+Linux :
+javac -sourcepath src -d compiled src/sudoku/*.java src/sudoku/gui/javafx/*.java src/sudoku/values/*.java
+
+
+JavaDoc :
+
+javadoc -private -sourcepath src -subpackages sudoku sudoku.values sudoku.gui.javafx -d doc
+
+
+Jar :
+
+javapackager -createjar -appclass sudoku.Sudoku -srcdir compiled -outdir dist -outfile Sudoku.jar
