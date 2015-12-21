@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="mainBox" maxHeight="Infinity" maxWidth="Infinity" stylesheets="/main/resources/defaulttheme.css" styleClass="main-box" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.gui.javafx.SudokuController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="New">
+          <items>
+            <MenuItem fx:id="easy" mnemonicParsing="false" text="Easy" />
+            <MenuItem fx:id="medium" mnemonicParsing="false" text="Medium" />
+            <MenuItem fx:id="hard" mnemonicParsing="false" text="Hard" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Layout">
+          <items>
+            <MenuItem fx:id="defaulttheme" mnemonicParsing="false" text="Default Theme" />
+            <MenuItem fx:id="darktheme" mnemonicParsing="false" text="Dark Theme" />
+            <MenuItem fx:id="pinkflamingo" mnemonicParsing="false" text="Pink Flamingo" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem fx:id="about" mnemonicParsing="false" text="About Sudoku" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <VBox fx:id="gridBox" styleClass="grid-box" maxHeight="Infinity" maxWidth="Infinity" VBox.vgrow="ALWAYS">
+      <children>
+        <GridPane fx:id="board" styleClass="grid-pane" maxHeight="Infinity" maxWidth="Infinity" VBox.vgrow="ALWAYS">
+        </GridPane>
+      </children>
+    </VBox>
+  </children>
+</VBox>
