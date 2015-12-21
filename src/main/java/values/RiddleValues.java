@@ -8,7 +8,7 @@
  * Copyright (c): Sebastian Strungies, 2015
  */
 
-package sudoku.values;
+package main.java.values;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -22,7 +22,7 @@ public class RiddleValues {
   private int[][] intArr;
 
   /**
-   * <br>Calls setIntArr() which creates an instance of intArr with valid values.
+   * Calls setIntArr() which creates an instance of intArr with valid values.
    */
   public RiddleValues()
   {

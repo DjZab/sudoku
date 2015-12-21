@@ -1,4 +1,4 @@
-package sudoku;
+package main.java;
 
 /*
  * Project: Sudoku
@@ -39,7 +39,7 @@ public class Sudoku extends Application {
    */
   @Override
   public void start(Stage stage) throws Exception {
-    Parent root = FXMLLoader.load(getClass().getResource("/resources/sudoku.fxml"));
+    Parent root = FXMLLoader.load(getClass().getResource("/main/resources/sudoku.fxml"));
 
     stage.setScene(new Scene(root, 420, 440));
     stage.setTitle("Sudoku");

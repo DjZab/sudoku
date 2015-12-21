@@ -1,3 +1,3 @@
-sudoku
-sudoku.gui.javafx
-sudoku.values
+main.java
+main.java.gui.javafx
+main.java.values

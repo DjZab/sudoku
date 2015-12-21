@@ -1,4 +1,4 @@
 /**
  * Contains the classes to generate a valid sudoku.
  */
-package sudoku.values;
+package main.java.values;

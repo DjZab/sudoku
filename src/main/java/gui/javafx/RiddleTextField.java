@@ -1,4 +1,4 @@
-package sudoku.gui.javafx;
+package main.java.gui.javafx;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -13,7 +13,7 @@ public class RiddleTextField extends TextField {
   private StringProperty restrict = new SimpleStringProperty(this, "restrict");
 
   /**
-  * <br> Installs a changeListener&lt;String&gt; on a textProperty, which checks the keyboard entries 
+  * Installs a changeListener&lt;String&gt; on a textProperty, which checks the keyboard entries 
   * <br> for invalid values and restricts them.
   */
   public RiddleTextField()

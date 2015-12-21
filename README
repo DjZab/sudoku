@@ -36,17 +36,20 @@ Compile and run just works with Oracle JRE 8 actually !
 Compile:
 
 Windows :
-javac -sourcepath src -d compiled src\sudoku\*.java src\sudoku\gui\javafx\*.java src\sudoku\values\*.java
+javac -sourcepath src\main\ -d compiled src\main\java\*.java src\main\java\gui\javafx\*.java src\main\java\values\*.java
 
 Linux :
-javac -sourcepath src -d compiled src/sudoku/*.java src/sudoku/gui/javafx/*.java src/sudoku/values/*.java
+javac -sourcepath src/main/ -d compiled src/main/java/*.java src/main/java/gui/javafx/*.java src/main/java/values/*.java
 
 
 JavaDoc :
 
-javadoc -private -sourcepath src -subpackages sudoku sudoku.values sudoku.gui.javafx -d doc
+Windows :
+javadoc -private -sourcepath src\ main.java -subpackages main.java.values main.gui.javafx -d doc
 
+Linux :
+javadoc -private -sourcepath src/ main.java -subpackages main.java.values main.java.gui.javafx -d doc
 
 Jar :
 
-javapackager -createjar -appclass sudoku.Sudoku -srcdir compiled -outdir dist -outfile Sudoku.jar
+javapackager -createjar -appclass main.java.Sudoku -srcdir compiled -outdir dist -outfile Sudoku.jar

@@ -1,6 +1,6 @@
-package sudoku.gui.javafx;
+package main.java.gui.javafx;
 
-import sudoku.values.RiddleValues;
+import main.java.values.RiddleValues;
 import java.util.ArrayList;
 import java.util.Random;
 import javafx.beans.Observable;
@@ -230,7 +230,7 @@ public class SudokuController {
   * @param style String
   */
   private void setTheme (String style) {
-    String str = "/resources/".concat(style).concat(".css");
+    String str = "/main/resources/".concat(style).concat(".css");
     this.mainBox.getStylesheets().clear();
     this.mainBox.getStylesheets().add(str);
   }
